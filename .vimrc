@@ -32,23 +32,23 @@ Plugin 'tpope/vim-commentary'           " Comment stuff out
 Plugin 'mitsuhiko/vim-sparkup'          " Sparkup (XML/jinja/htlm-django/etc.) support
 
 " --- Clojure ---
-Plugin 'tpope/vim-fireplace'            " Clojure completion
-Plugin 'guns/vim-clojure-highlight'     " Highlighting code
-Plugin 'guns/vim-clojure-static'        " Highlighting for static types
+" Plugin 'tpope/vim-fireplace'            " Clojure completion
+" Plugin 'guns/vim-clojure-highlight'     " Highlighting code
+" Plugin 'guns/vim-clojure-static'        " Highlighting for static types
 
 " --- Erlang ---
-Plugin 'jimenezrick/vimerl'             " The Erlang plugin for Vim
+" Plugin 'jimenezrick/vimerl'             " The Erlang plugin for Vim
 
 " --- CSS ---
-Plugin 'JulesWang/css.vim'              " CSS syntax file
-Plugin 'groenewege/vim-less'            " Vim syntax for LESS (dynamic CSS)
+" Plugin 'JulesWang/css.vim'              " CSS syntax file
+" Plugin 'groenewege/vim-less'            " Vim syntax for LESS (dynamic CSS)
 
 " --- JavaScript ---
-Plugin 'pangloss/vim-javascript'        " Vastly improved Javascript indentation and syntax support in Vim
+" Plugin 'pangloss/vim-javascript'        " Vastly improved Javascript indentation and syntax support in Vim
 
 " --- HTML ---
-Plugin 'othree/html5.vim'               " HTML5 omnicomplete and sytnax
-Plugin 'idanarye/breeze.vim'            " Html navigation like vim-easymotion, tag matching, tag highlighting and DOM navigation
+" Plugin 'othree/html5.vim'               " HTML5 omnicomplete and sytnax
+" Plugin 'idanarye/breeze.vim'            " Html navigation like vim-easymotion, tag matching, tag highlighting and DOM navigation
 
 " --- Python ---
 Plugin 'davidhalter/jedi-vim'           " Awesome Python autocompletion with VIM
@@ -59,9 +59,9 @@ Plugin 'hynek/vim-python-pep8-indent'   " PEP8 indent
 Plugin 'jmcantrell/vim-virtualenv'      " Virtualenv support in VIM
 
 " --- Rust ---
-Plugin 'rust-lang/rust.vim'             " Vim support for Rust file detection and syntax highlighting
-Plugin 'phildawes/racer'                " Rust code completion in vim via racer
-Plugin 'timonv/vim-cargo'               " Simple vim command bindings to quickly run cargo stuff from vim
+" Plugin 'rust-lang/rust.vim'             " Vim support for Rust file detection and syntax highlighting
+" Plugin 'phildawes/racer'                " Rust code completion in vim via racer
+" Plugin 'timonv/vim-cargo'               " Simple vim command bindings to quickly run cargo stuff from vim
 
 call vundle#end() " required
 filetype on
@@ -311,23 +311,23 @@ let g:syntastic_python_flake8_args='--ignore=E121,E128,E711,E301,E261,E241,E124,
 \ --max-line-length=80'
 
 " --- Rust ---
-set hidden
-let $RUST_SRC_PATH = "/Users/savicvalera/rust/src"
-let g:racer_cmd = "/Users/savicvalera/racer/target/release/racer"
-autocmd BufRead,BufNewFile *.rs set filetype=rust
-autocmd FileType rust setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
-autocmd FileType rust setlocal commentstring=//\ %s
+" set hidden
+" let $RUST_SRC_PATH = "/Users/savicvalera/rust/src"
+" let g:racer_cmd = "/Users/savicvalera/racer/target/release/racer"
+" autocmd BufRead,BufNewFile *.rs set filetype=rust
+" autocmd FileType rust setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+" autocmd FileType rust setlocal commentstring=//\ %s
 
 " --- Vim ---
 autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
 
 " --- template language support (SGML / XML too) ---
-autocmd FileType xml,html,htmljinja,htmldjango setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType html,htmljinja,htmldjango imap <buffer> <c-e> <Plug>SparkupExecute
-autocmd FileType html,htmljinja,htmldjango imap <buffer> <c-l> <Plug>SparkupNext
-autocmd FileType htmljinja setlocal commentstring={#\ %s\ #}
-let html_no_rendering=1
-let g:syntastic_html_checkers = []
+" autocmd FileType xml,html,htmljinja,htmldjango setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+" autocmd FileType html,htmljinja,htmldjango imap <buffer> <c-e> <Plug>SparkupExecute
+" autocmd FileType html,htmljinja,htmldjango imap <buffer> <c-l> <Plug>SparkupNext
+" autocmd FileType htmljinja setlocal commentstring={#\ %s\ #}
+" let html_no_rendering=1
+" let g:syntastic_html_checkers = []
 
 "=====================================================
 " User functions
