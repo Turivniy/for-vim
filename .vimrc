@@ -198,7 +198,7 @@ let g:syntastic_warning_symbol = 'x'
 let g:syntastic_style_warning_symbol = 'x'
 
 " Vim-Airline
-let g:airline_theme='term'
+let g:airline_theme='dark'
 
 "=====================================================
 " Python-mode settings
