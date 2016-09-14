@@ -347,3 +347,4 @@ endpython
 endfunction
 
 highlight ColorColumn ctermbg=8
+set paste
